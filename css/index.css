@@ -17,7 +17,7 @@ body{
     justify-content:center;
     align-items: flex-end;
     box-shadow: 0px 1px 0px #7d4627;
-}
+    }
 
 #logo{
     display: flex;
@@ -86,6 +86,7 @@ footer{
     display: flex;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
     background-color: #a8b6bf;
     
 }
@@ -100,8 +101,11 @@ footer h1{
 .main_menu div {
     width: 450px;
     height: 311px;
-    -webkit-transition: width 1s; /* Safari */
-    transition: width 1s;
+    -webkit-transition: width 3s; /* Safari */
+    transition: all .5s;
+}
+.main_menu a{
+    text-decoration: none;
 }
 .img_menu{
     width: 450px;
@@ -115,30 +119,30 @@ footer h1{
 }
 #img_forhim:hover,#img_forher:hover,#img_blankets:hover,#img_decore:hover {
     transition-timing-function: ease;
-    width: 480px;
+    background-size: 120% auto;
     
 }
 #img_forhim{
     background-image:url("../img/forhim1.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 450px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*width: 450px;*/
 }
 
 #img_forher{
     background-image:url("../img/forHer1.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #img_blankets{
     background-image:url("../img/blanket.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #img_decore{
     background-image:url("../img/toysdecor1.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .inst_main{
@@ -176,8 +180,30 @@ section li{
     font-family: 'Lobster', cursive;
     font-size: 3.5rem;
     }
+    #img_forhim:hover,#img_forher:hover,#img_blankets:hover,#img_decore:hover {
+    transition-timing-function: ease;
+    background-size: 120% auto;
 }
-
+.nav{
+    padding-right:10px;
+}
+body{
+    min-width: 320px;
+}
+.img_menu{
+    width: 320px;
+    height: 180px;
+    color: white;
+    font-size: 36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.main_menu div {
+    width: 320px;
+    height: 220px;
+}
 
 @media only screen and (max-width: 500px){
      div.img {
@@ -198,7 +224,7 @@ footer{
     flex-direction:column;
 }
 .foot_el{
-    min-width:200px;
+    min-width:350px;
     display:flex;
     flex-direction:column;
     background-color:#edd9c0;
@@ -206,6 +232,7 @@ footer{
 }
 .foot_soc{
      display:flex;
+     flex-wrap: wrap;
 }
 .socimg{
   width:50px;  
