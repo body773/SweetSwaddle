@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boys</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/prod.css">
+    <link rel="stylesheet" href="css/imggallery.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/prodinfo.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:700i|Lobster|Roboto" rel="stylesheet">
 </head>
 
@@ -58,7 +59,96 @@
         </nav>
     </header>
 <main>
-    
+    <section class="prodditail">
+        <section class="prodgalery">
+            <div>
+                <div class="w3-content">
+                    <img class="mySlides" src="img/prods/prodinfo/b1-1-1_m.jpg" >
+                    <img class="mySlides" src="img/prods/prodinfo/b1-1-2_m.jpg" >
+                    <img class="mySlides" src="img/prods/prodinfo/b1-1-3_m.jpg" >
+                    <img class="mySlides" src="img/prods/prodinfo/b1-1-4_m.jpg" >
+                    <img class="mySlides" src="img/prods/prodinfo/b1-1-5_m.jpg" >
+
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="img/prods/prodinfo/b1-1-1_s.jpg"  onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="img/prods/prodinfo/b1-1-2_s.jpg"  onclick="currentDiv(2)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="img/prods/prodinfo/b1-1-3_s.jpg"  onclick="currentDiv(3)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="img/prods/prodinfo/b1-1-4_s.jpg"  onclick="currentDiv(4)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="img/prods/prodinfo/b1-1-5_s.jpg"  onclick="currentDiv(5)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prodinfo">
+            <div class="info">
+                Grey linen shoes for baby Kids grey shoes Kids linen shoes Baby linen shoes Grey booties Grey baby booties Grey kids booties Grey clothing
+            </div>
+            <div class="">
+                <h3>USD 5.99</h3>
+                <p>Local taxes included (where applicable).</p>
+            </div>
+            <div class="item-param">
+                <div class="item-size">
+                    <label for="item-variant-size">Size</label>
+                    <span>
+                        <select id="item-variant-size" class="variant-select" name="listing_variation_id">
+                            <option value="" selected="">Select a size</option>
+                            <option >Newborn - Babies</option>
+                            <option >6-12 Months - Babies</option>
+                            <option >12-18 Months - Babies</option>
+                            <option >18-24 Months - Babies</option>
+                            <option >2T - Babies</option>
+                            <option >3T - Babies</option>
+                        </select>
+                    </span>
+                    <div class="item-variant-size-none">Please select a size</div>
+                </div>
+                <div class="item-material">
+                    <label for="item-variant-material">Material</label>
+                    <span>
+                        <select id="item-variant-material" class="variation-select" name="listing_variation_id">
+                            <option value="" selected="">Select a material</option>
+                            <option >Fabric sole</option>
+                            <option >waterproof sole</option>
+                        </select>
+                    </span>
+                    <div class="item-variant-material-none">Please select a material</div>
+                </div>
+                <div class="item-quantity">
+                    <label for="item-variant-quantity">Quantity</label>
+                    <span>
+                        <select id="item-variant-quantity" class="small" name="">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </span>
+                    <div class="item-variant-quantity-none">Please select a quantity</div>
+                </div>
+                <button class="btn-transaction" type="submit"><span>Add to cart</span></button>
+                <div id="item-overview">
+                    <h3>Overview</h3>
+                    <ul class="properties">
+                      <li class="">Handmade item</li>
+                      <li class="">Materials: linen, flannel, faux shepra</li>
+                      <li class="">Ships worldwide from Ukraine</li>
+                    </ul>
+                 </div>
+            </div>
+        </section>
+    </section>
 </main>
+<script type="text/javascript" src="js/imggallery.js"></script>
 </body>
 </html>

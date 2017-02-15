@@ -17,6 +17,7 @@ body{
     justify-content:center;
     align-items: flex-end;
     box-shadow: 0px 1px 0px #7d4627;
+    z-index: 999;
     }
 
 #logo{
@@ -59,7 +60,7 @@ main{
      display: flex;
      flex-direction:column;
      }
-.main_top{
+/*.main_top{
      background-image: url('../img/main_img.jpg');
      background-repeat: no-repeat;
      background-size: 100%;
@@ -76,6 +77,8 @@ main{
     color: white;
     text-shadow: -1px 0 #7d4627, 0 1px #7d4627, 1px 0 #7d4627, 0 -1px #7d4627;
 }
+*/
+
 .main_menu{
      text-shadow: -1px 0 #7d4627, 0 1px #7d4627, 1px 0 #7d4627, 0 -1px #7d4627;
     display: flex;
