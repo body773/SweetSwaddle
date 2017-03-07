@@ -9,25 +9,27 @@
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:700i|Lobster|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800|Titillium+Web:200" rel="stylesheet">
     <body id="body_boots">
-        <header class="nav" id="header">
-            <section id="logo">
+        <header class="nav flex-row" id="header">
+            <section id="logo" class="flex-col">
+                <a href="index.html">
                 <aside class="l_sweet">Sweet</aside>
                 <aside class="l_swad">Swaddle</aside>
+                </a>
             </section>
-
-            <nav class="nav_item">
-                <ul class="topnav" id="myTopnav">
+            <nav id="myTopnav" class="nav_item" >    
+                <ul class="topnav ball1" >
                     <li class="dropdown">
-                        <a href="#" >Home</a>
+                        <a href="index.html" class="dropbtn">Home</a>
                     </li>
                     <li class="dropdown">
                         <a href="boys.html" class="dropbtn">Boys</a>
-                        <div class="dropdown-content">
-                            <a href="boys.html#top1">booties</a>
-                            <a href="boys.html#top2">bibs</a>
-                            <a href="boys.html#top3">bow ties</a>
-                            <a href="boys.html#top4">diaper covers</a>
+                        <div id="sidebar" class="dropdown-content">
+                            <a id="bootieslink" href="boys.html#top1">booties</a>
+                            <a id="bibslink" href="boys.html#top2">bibs</a>
+                            <a id="bowlink" href="boys.html#top3">bow ties</a>
+                            <a id="diaperlink" href="boys.html#top4">diaper covers</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -48,20 +50,16 @@
                             <a href="#">night lights</a>
                         </div>
                     </li>
-                    <li class="dropdown"><a href="#">Contact</a>
-                    </li>
-                    <li  class="icon">
-                        <a id="mobicon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    <li class="dropdown"><a href="#" class="dropbtn">Contact</a>
                     </li>
                 </ul>
             </nav>
-
+            <div  class="icon">
+                <a class="foo" href="#">&#9776;</a>
+            </div>
         </header>
-        <main>
+        <main class="flex-col">
             <div id="top1"></div>
-            <!--<section class="main_top">
-                <h1>Just for a little miracles!</h1>
-            </section>-->
             <section class="main_top">
                 <div id="captioned-gallery">
 	                <figure class="slider">
@@ -83,32 +81,29 @@
 		                </figure>
 	                </figure>
                 </div>
+                
             </section>
             <section>
-                <h1>Save Time . Give Generously . Live in Harmony</h1>
+                <h1 class="txt-centr">Save Time . Give Generously . Live in Harmony</h1>
                 <p>Surprise your loved ones, friends, colleagues and clients, with beautifully packaged and hand selected items sourced from local artisan crafters, Etsy sellers small businesses and international brands... No matter the celebration, our gift boxes will fulfill your need for a thoughtful, yet unique and memorable gift because we want each recipient to feel as special as they truly are.
                 </p>
             </section>
             <section>
-                <h1>View Our Collection</h1>
+                <h1 class="txt-centr">View Our Collection</h1>
             </section>
-            <section class="main_menu">
+            <section class="main_menu flex-row-cent">
                 <a href="boys.html">
-                    <div id="img_forhim" class="img_menu">Boys</div>
+                    <div id="img_forhim" class="img_menu flex-row-cent img-prop">Boys</div>
                 </a>
                 <a href="girls.html">
-                    <div id="img_forher" class="img_menu">Girls</div>
+                    <div id="img_forher" class="img_menu flex-row-cent img-prop">Girls</div>
                 </a>
-                <div id="img_blankets" class="img_menu">
-                    Blankets
-                </div>
-                <div id="img_decore" class="img_menu">
-                    Decore & toys
-                </div>
+                <div id="img_blankets" class="img_menu flex-row-cent img-prop">Blankets</div>
+                <div id="img_decore" class="img_menu flex-row-cent img-prop">Decore & toys</div>
             </section>
             <section>
-                <h1>Follow us on Instagram</h1>
-                <section class="inst_main">
+                <h1 class="txt-centr">Follow us on Instagram</h1>
+                <section class="flex-row-cent">
                     <div class="img">
                         <a target="_blank" href="https://www.instagram.com/p/BDN_xPIGakA/?taken-by=olenaraditsa">
                             <img src="img/inst/inst1.jpg" alt="pic1">
@@ -172,47 +167,47 @@
                 </section>
             </section>
         </main>
-        <footer>
-            <section class="foot_sect">
+        <footer class="flex-row-cent">
+            <section class="foot_col flex-col">
                 <h1>Boys</h1>
-                <ul class="foot_el">
-                    <li><a href="#">booties</a>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>booties</span></a>
                     </li>
-                    <li><a href="#">bibs</a>
+                    <li><a href="#"><span>bibs</span></a>
                     </li>
-                    <li><a href="#">bow ties</a>
+                    <li><a href="#"><span>bow ties</span></a>
                     </li>
-                    <li><a href="#">diaper covers</a>
+                    <li><a href="#"><span>diaper covers</span></a>
                     </li>
                 </ul>
             </section>
-            <section class="foot_sect">
+            <section class="foot_col flex-col">
                 <h1>Girls</h1>
-                <ul class="foot_el">
-                    <li><a href="#">booties</a>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>booties</span></a>
                     </li>
-                    <li><a href="#">bibs</a>
+                    <li><a href="#"><span>bibs</span></a>
                     </li>
-                    <li><a href="#">headbands</a>
+                    <li><a href="#"><span>headbands</span></a>
                     </li>
-                    <li><a href="#">bloomers</a>
+                    <li><a href="#"><span>bloomers</span></a>
                     </li>
                 </ul>
             </section>
-            <section class="foot_sect">
+            <section class="foot_col flex-col">
                 <h1>Decore & toys</h1>
-                <ul class="foot_el">
-                    <li><a href="#">teethers</a>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>teethers</span></a>
                     </li>
-                    <li><a href="#">baby pillows</a>
+                    <li><a href="#"><span>baby pillows</span></a>
                     </li>
-                    <li><a href="#">blankets</a>
+                    <li><a href="#"><span>blankets</span></a>
                     </li>
-                    <li><a href="#">night lights</a>
+                    <li><a href="#"><span>night lights</span></a>
                     </li>
                 </ul>
             </section>
-            <section class="foot_soc">
+            <section class="foot_soc flex-row-cent">
                 <h1>Contact with us by:</h1>
                 <img class=socimg src="img/soc/facebook.png" alt="facebook">
                 <img class=socimg src="img/soc/Instagram-PNG-HD.png" alt="instagram">

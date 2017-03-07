@@ -1,38 +1,53 @@
-
-body{
-    max-width: 1024px;
-    margin: 0 auto;
- /*   display:flex;
+.flex-col{
+    display: flex;
     flex-direction:column;
-    justify-content:center;*/
-    
+}
+.flex-row-cent{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.flex-row{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.txt-centr{
+    text-align:center;    
+}
+.txt-left{
+    text-align:left;    
+}
+body{
+    max-width: 1280px;
+    min-width: 350px;
+    overflow:auto;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:18px;
+    font-weight: 800;
+    color:#4d4d4d;
 }
 .nav{
     width: 100%;
     position: fixed;
     top: 0px;
     background-color: white;
-    max-width: 1024px;
-    display: flex;
-    justify-content:center;
-    align-items: flex-end;
+    max-width: 1280px;
     box-shadow: 0px 1px 0px #7d4627;
     z-index: 999;
     }
-
 #logo{
-    display: flex;
-    flex-direction:column;
     align-content:stretch;
     align-items: stretch;
-    width:140px;
+    width:100px;
+    margin-left: 10px;
     margin-right: 10px;
    }
 .l_sweet{
     color: #7d4627;
     padding: 0;
     margin: -5px ;
-    text-align:left;
     font-size: 30px;
     font-family: 'Lobster', cursive;
   }
@@ -40,117 +55,68 @@ body{
     color: #7d4627;
     padding: 0;
     margin-left: 2px;
-     margin-right: 10px;
-    text-align:left;
+    margin-right: 10px;
     font-size: 22px;
     font-family: 'Lobster', cursive;
   }
 
- p{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-}
 h1{
      color: #7d4627;
-     text-align: center;
-     font-family: 'Droid Serif', serif;
+     font-family: 'Titillium Web', sans-serif;
+     /*font-size: 1.5em;*/
+     /*font-family: 'Droid Serif', serif;*/
 }
-main{
-     display: flex;
-     flex-direction:column;
-     }
-/*.main_top{
-     background-image: url('../img/main_img.jpg');
-     background-repeat: no-repeat;
-     background-size: 100%;
-     display: flex;
-     flex-direction:row;
-     align-items:center;
-     
-}
-
-.main_top h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 5rem;
-    margin: 27% auto 28% auto;
-    color: white;
-    text-shadow: -1px 0 #7d4627, 0 1px #7d4627, 1px 0 #7d4627, 0 -1px #7d4627;
-}
-*/
-
 .main_menu{
      text-shadow: -1px 0 #7d4627, 0 1px #7d4627, 1px 0 #7d4627, 0 -1px #7d4627;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
 }
 footer{
-    display: flex;
-    justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
     background-color: #a8b6bf;
-    
 }
 footer h1{
     color:white;
 }
 .foot_soc{
-    display: flex;
-    justify-content:center;
     align-items:center;
 }
 .main_menu div {
-    width: 450px;
-    height: 311px;
     -webkit-transition: width 3s; /* Safari */
     transition: all .5s;
 }
-.main_menu a{
+a{
     text-decoration: none;
+    color: #fff;
 }
 .img_menu{
-    width: 450px;
-    height: 311px;
+     min-width: 400px;
+     min-height: 300px;
+    background-size: 100% 100%;
+    background-position:0 0;
     color: white;
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
     margin: 10px;
-    display: flex;
-    justify-content:center;
     align-items:center;
 }
 #img_forhim:hover,#img_forher:hover,#img_blankets:hover,#img_decore:hover {
-    transition-timing-function: ease;
-    background-size: 120% auto;
-    
+    transition-timing-function: ease-out;
+    opacity:.7;
+}
+.img-prop {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #img_forhim{
     background-image:url("../img/forhim1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /*width: 450px;*/
 }
-
 #img_forher{
     background-image:url("../img/forHer1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 #img_blankets{
     background-image:url("../img/blanket.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 #img_decore{
     background-image:url("../img/toysdecor1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.inst_main{
-    display: flex;
-    flex-wrap: wrap;
 }
 div.img{
     width: 200px;
@@ -162,30 +128,27 @@ div.img img{
     width: 100%;
     height: auto;
 }
-
-
-section li{
+.foot_el li{
     list-style-type: none;
     overflow: hidden;
     color: #7d4627;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 6px 4px;
     text-decoration: none;
 }
-
 @media only screen and (max-width: 700px){
     div.img {
         width: 49.99999%;
         margin: 6px 0;
     }
-    
     .main_top h1 {
-    font-family: 'Lobster', cursive;
     font-size: 3.5rem;
     }
     #img_forhim:hover,#img_forher:hover,#img_blankets:hover,#img_decore:hover {
     transition-timing-function: ease;
-    background-size: 120% auto;
+     opacity:.7;
+    /*background-size: 120%;*/
+
 }
 .nav{
     padding-right:10px;
@@ -199,16 +162,24 @@ body{
     color: white;
     font-size: 36px;
     margin: 0 auto;
-    display: flex;
-    justify-content:center;
-    align-items:center;
 }
 .main_menu div {
     width: 320px;
     height: 220px;
 }
+#mobicon{
+    color:#7d4627;
+}
+#logo{
+ margin-left:10px;
+}
+#mobicon {
+  font-weight: bold;
+  font-size:22px;
+}
 }
 @media only screen and (max-width: 500px){
+
      div.img {
         width: 100%;
     }
@@ -216,26 +187,22 @@ body{
     font-family: 'Lobster', cursive;
     font-size: 2rem;
 }
-footer{
-    display: flex;
-    flex-direction:column;
-
+#mobicon{
+    color:#7d4627;
+}    
 }
-}
-.foot_sect{
-    display:flex;
-    flex-direction:column;
+.foot_col{
+    width: 180px;
+    margin: 10px;
+    padding:5px;
+    
 }
 .foot_el{
-    min-width:350px;
-    display:flex;
-    flex-direction:column;
-    background-color:#edd9c0;
+   padding: 0 10px 0 0;
     margin:0;
-}
-.foot_soc{
-     display:flex;
-     flex-wrap: wrap;
+    border-right-width: 1px;
+    border-right-color: #fff;
+    border-right-style: solid;
 }
 .socimg{
   width:50px;  
@@ -253,4 +220,28 @@ footer{
 }
 #top4{
     height:50px;
+}
+
+li span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+li span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+li:hover span {
+  padding-right: 25px;
+}
+
+li:hover span:after {
+  opacity: 1;
+  right: 0;
 }

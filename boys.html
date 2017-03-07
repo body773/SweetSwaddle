@@ -9,64 +9,66 @@
     <link rel="stylesheet" href="css/prod.css">
     <link rel="stylesheet" href="css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:700i|Lobster|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
 </head>
 
 <body>
-    <header class="nav" id="header">
-        <section id="logo">
-            <aside class="l_sweet">Sweet</aside>
-            <aside class="l_swad">Swaddle</aside>
-        </section>
-
-        <nav class="nav_item">
-            <ul class="topnav" id="myTopnav">
-                <li class="dropdown">
-                    <a href="index.html" class="dropbtn">Home</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Boys</a>
-                    <div id="sidebar" class="dropdown-content">
-                        <a id="bootieslink" href="#">booties</a>
-                        <a id="bibslink" href="#">bibs</a>
-                        <a id="bowlink" href="#">bow ties</a>
-                        <a id="diaperlink" href="#">diaper covers</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="girls.html" class="dropbtn">Girls</a>
-                    <div class="dropdown-content">
-                        <a href="girls.html#top1">booties</a>
-                        <a href="girls.html#top2">bibs</a>
-                        <a href="girls.html#top3">headbands</a>
-                        <a href="girls.html#top4">bloomers</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Decore & toys</a>
-                    <div class="dropdown-content">
-                        <a href="#">teethers</a>
-                        <a href="#">baby pillows</a>
-                        <a href="#">blankets</a>
-                        <a href="#">night lights</a>
-                    </div>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
-                <li  class="icon">
-                    <a id="mobicon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <header class="nav flex-row" id="header">
+            <section id="logo" class="flex-col">
+                 <a href="index.html">
+                <aside class="l_sweet">Sweet</aside>
+                <aside class="l_swad">Swaddle</aside>
+                </a>
+            </section>
+            <nav id="myTopnav" class="nav_item" >    
+                <ul class="topnav ball1" >
+                    <li class="dropdown">
+                        <a href="index.html" class="dropbtn">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Boys</a>
+                        <div id="sidebar" class="dropdown-content">
+                            <a id="bootieslink" href="#">booties</a>
+                            <a id="bibslink" href="#">bibs</a>
+                            <a id="bowlink" href="#">bow ties</a>
+                            <a id="diaperlink" href="#">diaper covers</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="girls.html" class="dropbtn">Girls</a>
+                        <div class="dropdown-content">
+                            <a href="girls.html#top1">booties</a>
+                            <a href="girls.html#top2">bibs</a>
+                            <a href="girls.html#top3">headbands</a>
+                            <a href="girls.html#top4">bloomers</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Decore & toys</a>
+                        <div class="dropdown-content">
+                            <a href="#">teethers</a>
+                            <a href="#">baby pillows</a>
+                            <a href="#">blankets</a>
+                            <a href="#">night lights</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropbtn">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div  class="icon">
+                <a class="foo" href="#">&#9776;</a>
+            </div>
+        </header>
+    <main class="flex-col">
         <div id="top1"></div>
         <section id="booties" class="sect_article">
-            <h1>booties</h1>
+            <h1 class="txt-centr">booties</h1>
         </section>
-        <section class="sect_prod">
+        <section class="flex-row-cent">
             <div class="proditem">
                 <a href="boys1-1.html">
-                    <div id="img-b-1-1" class="prodimg"></div>
+                    <div id="img-b-1-1" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -75,7 +77,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-2" class="prodimg"></div>
+                    <div id="img-b-1-2" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -84,7 +86,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-3" class="prodimg"></div>
+                    <div id="img-b-1-3" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -93,7 +95,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-4" class="prodimg"></div>
+                    <div id="img-b-1-4" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -102,7 +104,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-5" class="prodimg"></div>
+                    <div id="img-b-1-5" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -111,7 +113,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-6" class="prodimg"></div>
+                    <div id="img-b-1-6" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -120,7 +122,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-7" class="prodimg"></div>
+                    <div id="img-b-1-7" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -129,7 +131,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-8" class="prodimg"></div>
+                    <div id="img-b-1-8" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -138,7 +140,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-1-9" class="prodimg"></div>
+                    <div id="img-b-1-9" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -148,12 +150,12 @@
         </section>
         <div id="top2"></div>
         <section id="bibs" class="sect_article">
-            <h1>bibs</h1>
+            <h1 class="txt-centr">bibs</h1>
         </section>
-        <section class="sect_prod">
+        <section class="flex-row-cent">
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-2-1" class="prodimg"></div>
+                    <div id="img-b-2-1" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -162,7 +164,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-2-2" class="prodimg"></div>
+                    <div id="img-b-2-2" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -171,7 +173,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-2-3" class="prodimg"></div>
+                    <div id="img-b-2-3" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -181,12 +183,12 @@
         </section>
         <div id="top3"></div>
         <section id="bow" class="sect_article">
-            <h1>bow ties</h1>
+            <h1 class="txt-centr">bow ties</h1>
         </section>
-        <section class="sect_prod">
+        <section class="flex-row-cent">
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-3-1" class="prodimg"></div>
+                    <div id="img-b-3-1" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -196,12 +198,12 @@
         </section>
         <div id="top4"></div>
         <section id="diaper" class="sect_article">
-            <h1>diaper covers</h1>
+            <h1 class="txt-centr">diaper covers</h1>
         </section>
-        <section class="sect_prod">
+        <section class="flex-row-cent">
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-4-1" class="prodimg"></div>
+                    <div id="img-b-4-1" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -210,7 +212,7 @@
             </div>
             <div class="proditem">
                 <a href="#">
-                    <div id="img-b-4-2" class="prodimg"></div>
+                    <div id="img-b-4-2" class="prodimg img-prop"></div>
                 </a>
                 <div class=proddescr>
                     <div>Grey linen shoes for baby</div>
@@ -219,14 +221,53 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section class="foot_soc">
-            <h1>Contact with us by:</h1>
-            <img class=socimg src="img/soc/facebook.png" alt="facebook">
-            <img class=socimg src="img/soc/Instagram-PNG-HD.png" alt="instagram">
-            <img class=socimg src="img/soc/Pinterest_Favicon.png" alt="pinterest">
-        </section>
-    </footer>
+     <footer class="flex-row-cent">
+            <section class="foot_col flex-col">
+                <h1>Boys</h1>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>booties</span></a>
+                    </li>
+                    <li><a href="#"><span>bibs</span></a>
+                    </li>
+                    <li><a href="#"><span>bow ties</span></a>
+                    </li>
+                    <li><a href="#"><span>diaper covers</span></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="foot_col flex-col">
+                <h1>Girls</h1>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>booties</span></a>
+                    </li>
+                    <li><a href="#"><span>bibs</span></a>
+                    </li>
+                    <li><a href="#"><span>headbands</span></a>
+                    </li>
+                    <li><a href="#"><span>bloomers</span></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="foot_col flex-col">
+                <h1>Decore & toys</h1>
+                <ul class="foot_el flex-col">
+                    <li><a href="#"><span>teethers</span></a>
+                    </li>
+                    <li><a href="#"><span>baby pillows</span></a>
+                    </li>
+                    <li><a href="#"><span>blankets</span></a>
+                    </li>
+                    <li><a href="#"><span>night lights</span></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="foot_soc flex-row-cent">
+                <h1>Contact with us by:</h1>
+                <img class=socimg src="img/soc/facebook.png" alt="facebook">
+                <img class=socimg src="img/soc/Instagram-PNG-HD.png" alt="instagram">
+                <img class=socimg src="img/soc/Pinterest_Favicon.png" alt="pinterest">
+            </section>
+        </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/scrollto.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
