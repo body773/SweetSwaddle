@@ -99,10 +99,11 @@
                 <p>Local taxes included (where applicable).</p>
             </div>
             <div class="item-param">
+                <form action="https://formspree.io/body.nv@gmail.com" method="POST">
                 <div class="item-size">
                     <label for="item-variant-size">Size</label>
                     <span>
-                        <select id="item-variant-size" class="variant-select" name="listing_variation_id">
+                        <select id="item-variant-size" class="variant-select" name="size">
                             <option value="" selected="">Select a size</option>
                             <option >Newborn - Babies</option>
                             <option >6-12 Months - Babies</option>
@@ -117,7 +118,7 @@
                 <div class="item-material">
                     <label for="item-variant-material">Material</label>
                     <span>
-                        <select id="item-variant-material" class="variation-select" name="listing_variation_id">
+                        <select id="item-variant-material" class="variation-select" name="type">
                             <option value="" selected="">Select a material</option>
                             <option >Fabric sole</option>
                             <option >waterproof sole</option>
@@ -128,7 +129,7 @@
                 <div class="item-quantity">
                     <label for="item-variant-quantity">Quantity</label>
                     <span>
-                        <select id="item-variant-quantity" class="small" name="">
+                        <select id="item-variant-quantity" class="small" name="count">
                             <option value="1" selected="">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -137,7 +138,7 @@
                     </span>
                     <div class="item-variant-quantity-none">Please select a quantity</div>
                 </div>
-                <button class="btn-transaction" type="submit"><span>Add to cart</span></button>
+                <button class="btn-transaction" type="submit" value="Send"><span>Add to cart</span></button>
                 <div id="item-overview">
                     <h3>Overview</h3>
                     <ul class="properties">
@@ -146,6 +147,7 @@
                       <li class="">Ships worldwide from Ukraine</li>
                     </ul>
                  </div>
+                 </form>
             </div>
         </section>
         <section class="prodtxt">
